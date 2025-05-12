@@ -12,12 +12,70 @@
     />
     <title>Oldagram</title>
   </head>
-  <body class="">
-    <header class="text-md mx-3 bg-yellow-400 font-['Source_Sans_3']">
-      This is to check the header
-    </header>
-    <main></main>
-    <footer></footer>
+  <body
+    class="min-h-screen py-8 w-screen antialiased font-['Source_Sans_3'] bg-[#F5F5F5]"
+  >
+    <div class="container mx-auto px-4">
+      <header
+        class="flex items-center p-4 justify-between bg-white border-b border-[#C6C6C6]"
+      >
+        <img
+          src="./assets/images/oldagram-logo.svg"
+          alt="A brand logo for the instagram clone"
+        />
+
+        <img
+          src="./assets//images/your-avatar.svg"
+          alt="An avatar of the profile owner"
+        />
+      </header>
+      <main class="flex flex-col items-center gap-4">
+        <section class="bg-white w-full">
+          <div class="flex flex-row p-[10px] gap-2">
+            <img
+              src="./assets/images/Vincent van Gogh.svg"
+              alt="An avatar of a post"
+              class="rounded-4xl"
+            />
+            <div>
+              <p class="font-bold text-sm">Vincent van Gogh</p>
+              <p class="text-xs">Zudert, Netherlands</p>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="./assets/images/post-image.svg"
+              alt="A post image of an art"
+              class="w-full block h-auto"
+            />
+          </div>
+          
+          <div class="flex flex-col gap-[12px] p-[10px]">
+            <div class="flex flex-row items-center gap-4">
+              <img
+                src="./assets/images/like.svg"
+                alt="An icon for liking posts"
+              />
+              <img
+                src="./assets/images/comment.svg"
+                alt="An icon for commenting on posts"
+              />
+              <img
+                src="./assets/images/share.svg"
+                alt="An icon for sharing posts"
+              />
+            </div>
+            <p class="font-bold text-xs">21,492 likes</p>
+            <p class="text-xs">
+              <span class="font-bold">vincey1853</span> just took a few
+              mushrooms lol
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
     <script type="module" src="/script.js"></script>
   </body>
 </html>
