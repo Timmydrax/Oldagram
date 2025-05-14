@@ -12,10 +12,8 @@
     />
     <title>Oldagram</title>
   </head>
-  <body
-    class="min-h-screen py-8 w-full antialiased font-['Source_Sans_3'] bg-[#F5F5F5]"
-  >
-    <div class="container mx-auto px-4">
+  <body class="min-h-screen w-full antialiased font-['Source_Sans_3'] bg-white">
+    <div class="mx-auto">
       <header
         class="flex items-center p-4 justify-between bg-white border-b border-[#C6C6C6]"
       >
@@ -29,141 +27,13 @@
           alt="An avatar of the profile owner"
         />
       </header>
+
+      <!-- Posts Container -->
       <main class="flex flex-col items-center gap-4">
-        <!-- First Post -->
-        <section class="bg-white w-full">
-          <div class="flex flex-row p-[10px] gap-2">
-            <img
-              src="./assets/images/Vincent van Gogh.svg"
-              alt="An avatar of a post"
-              class="rounded-4xl"
-            />
-            <div>
-              <p class="font-bold text-sm">Vincent van Gogh</p>
-              <p class="text-xs">Zudert, Netherlands</p>
-            </div>
-          </div>
-
-          <div>
-            <img
-              src="./assets/images/post-image.svg"
-              alt="A post image of an art"
-              class="w-full block h-auto"
-            />
-          </div>
-
-          <div class="flex flex-col gap-[12px] p-[10px]">
-            <div class="flex flex-row items-center gap-4">
-              <img
-                src="./assets/images/like.svg"
-                alt="An icon for liking posts"
-              />
-              <img
-                src="./assets/images/comment.svg"
-                alt="An icon for commenting on posts"
-              />
-              <img
-                src="./assets/images/share.svg"
-                alt="An icon for sharing posts"
-              />
-            </div>
-            <p class="font-bold text-xs">21,492 likes</p>
-            <p class="text-xs">
-              <span class="font-bold">vincey1853</span> just took a few
-              mushrooms lol
-            </p>
-          </div>
-        </section>
-
-        <!-- Second Post -->
-        <section class="bg-white w-full">
-          <div class="flex flex-row p-[10px] gap-2">
-            <img
-              src="./assets/images/avatar gustave.svg"
-              alt="An avatar of a post"
-              class="rounded-4xl"
-            />
-            <div>
-              <p class="font-bold text-sm">Gustave Courbet</p>
-              <p class="text-xs">Ornans, France</p>
-            </div>
-          </div>
-
-          <div>
-            <img
-              src="./assets/images/post-image gustave.svg"
-              alt="A post image of an art"
-              class="w-full block h-auto"
-            />
-          </div>
-
-          <div class="flex flex-col gap-[12px] p-[10px]">
-            <div class="flex flex-row items-center gap-4">
-              <img
-                src="./assets/images/like.svg"
-                alt="An icon for liking posts"
-              />
-              <img
-                src="./assets/images/comment.svg"
-                alt="An icon for commenting on posts"
-              />
-              <img
-                src="./assets/images/share.svg"
-                alt="An icon for sharing posts"
-              />
-            </div>
-            <p class="font-bold text-xs">12,502 likes</p>
-            <p class="text-xs">
-              <span class="font-bold">gus1819</span> i'm feelin a bit stressed
-              tbh
-            </p>
-          </div>
-        </section>
-
-        <!-- Third Post -->
-        <section class="bg-white w-full">
-          <div class="flex flex-row p-[10px] gap-2">
-            <img
-              src="./assets/images/avatar joseph.svg"
-              alt="An avatar of a post"
-              class="rounded-4xl"
-            />
-            <div>
-              <p class="font-bold text-sm">Joseph Ducreux</p>
-              <p class="text-xs">Paris, France</p>
-            </div>
-          </div>
-
-          <div>
-            <img
-              src="./assets/images/post-image joseph.svg"
-              alt="A post image of an art"
-              class="w-full block h-auto"
-            />
-          </div>
-
-          <div class="flex flex-col gap-[12px] p-[10px]">
-            <div class="flex flex-row items-center gap-4">
-              <img
-                src="./assets/images/like.svg"
-                alt="An icon for liking posts"
-              />
-              <img
-                src="./assets/images/comment.svg"
-                alt="An icon for commenting on posts"
-              />
-              <img
-                src="./assets/images/share.svg"
-                alt="An icon for sharing posts"
-              />
-            </div>
-            <p class="font-bold text-xs">15,137 likes</p>
-            <p class="text-xs">
-              <span class="font-bold">jd1735</span> gm friends! which coin are
-              YOU stacking up today?? post below and WAGMI!
-            </p>
-          </div>
-        </section>
+        <div
+          id="posts-container"
+          class="w-full flex flex-col gap-6 md:flex md:flex-row md:flex-wrap"
+        ></div>
       </main>
     </div>
     <script type="module" src="/script.js"></script>
