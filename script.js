@@ -47,7 +47,7 @@ const postContainer = document.getElementById("posts-container");
 
 // Render Posts function
 const renderPosts = () => {
-  posts.forEach((post) => {
+  posts.forEach((post, index) => {
     postContainer.innerHTML += `
   
 <section class="bg-white w-full">
@@ -67,7 +67,9 @@ const renderPosts = () => {
             <img
               src=${post.postImage}
               alt="A post image of an art"
-              class="w-full block h-auto"
+              class="w-full block h-auto cursor-pointer"
+              id='likeImg'
+              data-index="${index}"
             />
           </div>
 
@@ -76,6 +78,9 @@ const renderPosts = () => {
               <img
                 src= ${post.like}
                 alt="An icon for liking posts"
+                class="cursor-pointer"
+                id="likeBtn"
+                data-index="${index}"
               />
               <img
                 src=${post.comment}
@@ -86,7 +91,7 @@ const renderPosts = () => {
                 alt="An icon for sharing posts"
               />
             </div>
-            <p class="font-bold text-xs">${post.likes} likes</p>
+            <p class="font-bold text-xs" id="likes-${index}">${post.likes} likes</p>
             <p class="text-xs">
               <span class="font-bold">${post.username}</span> ${post.comments}
             </p>
@@ -97,4 +102,30 @@ const renderPosts = () => {
   });
 };
 
+const handleLike = () => {
+  const likeBtn = document.querySelectorAll("#likeBtn");
+  const likeImg = document.querySelectorAll("#likeImg");
+
+  likeBtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const index = btn.dataset.index;
+      posts[index].likes += 1;
+      document.getElementById(
+        `likes-${index}`
+      ).textContent = `${posts[index].likes} likes`;
+    });
+  });
+
+  likeImg.forEach((img) => {
+    img.addEventListener("dblclick", () => {
+      const index = img.dataset.index;
+      posts[index].likes += 1;
+      document.getElementById(
+        `likes-${index}`
+      ).textContent = `${posts[index].likes} likes`;
+    });
+  });
+};
+
 renderPosts();
+handleLike();
