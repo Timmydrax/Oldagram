@@ -41,7 +41,7 @@ const posts = [
   },
 ];
 
-// Stretch goals Render all posts with javascripts and Increase like when double tapped.
+
 
 const postContainer = document.getElementById("posts-container");
 
