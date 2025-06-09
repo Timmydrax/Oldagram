@@ -12,7 +12,7 @@ const posts = [
     like: "assets/images/like.svg",
     comment: "assets/images/comment.svg",
     share: "assets/images/share.svg",
-  },
+  },  
   {
     name: "Gustave Courbet",
     username: "gus1819",
