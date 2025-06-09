@@ -1,3 +1,4 @@
+// The Constants.
 const posts = [
   {
     name: "Vincent van Gogh",
