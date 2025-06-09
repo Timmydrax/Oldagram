@@ -102,6 +102,7 @@ const renderPosts = () => {
   });
 };
 
+// Handle Like Function.
 const handleLike = () => {
   const likeBtn = document.querySelectorAll("#likeBtn");
   const likeImg = document.querySelectorAll("#likeImg");
