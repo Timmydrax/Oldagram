@@ -48,7 +48,7 @@ const postContainer = document.getElementById("posts-container");
 // Render Posts function
 const renderPosts = () => {
   posts.forEach((post, index) => {
-    postContainer.innerHTML += `
+    postContainer.innerHTML += ` 
   
 <section class="bg-white w-full">
           <div class="flex flex-row p-[1rem] gap-2">
