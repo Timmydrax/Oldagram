@@ -1,4 +1,4 @@
-import { posts } from "./data";
+import { posts } from "./data.js";
 
 const postContainer = document.getElementById("posts-container");
 
