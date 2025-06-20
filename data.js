@@ -1,0 +1,43 @@
+// The Constants.
+export const posts = [
+  {
+    name: "Vincent van Gogh",
+    username: "vincey1853",
+    location: "Zundert, Netherlands",
+    avatar: "assets/images/Vincent.png",
+    postImage: "assets/images/post-image.svg",
+    comments: "just took a few mushrooms lol",
+    likes: 21,
+    id: "post-one",
+    like: "assets/images/like.svg",
+    comment: "assets/images/comment.svg",
+    share: "assets/images/share.svg",
+  },  
+  {
+    name: "Gustave Courbet",
+    username: "gus1819",
+    location: "Ornans, France",
+    avatar: "assets/images/Gustave.png",
+    postImage: "assets/images/post-image-gustave.svg",
+    comments: "i'm feelin a bit stressed tbh",
+    likes: 4,
+    id: "post-two",
+    like: "assets/images/like.svg",
+    comment: "assets/images/comment.svg",
+    share: "assets/images/share.svg",
+  },
+  {
+    name: "Joseph Ducreux",
+    username: "jd1735",
+    location: "Paris, France",
+    avatar: "assets/images/Joseph.png",
+    postImage: "assets/images/post-image-joseph.svg",
+    comments:
+      "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
+    likes: 152,
+    id: "post-three",
+    like: "assets/images/like.svg",
+    comment: "assets/images/comment.svg",
+    share: "assets/images/share.svg",
+  },
+];
